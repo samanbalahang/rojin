@@ -1,0 +1,33 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width='device-width', initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="modal.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap"
+      rel="stylesheet"
+    />
+</head>
+<body>
+    <main class="page-content">
+        <button onclick="toggleModal()" type="button">Open Modal</button>
+      </main>
+      <div class="background" onclick="toggleModal()"></div>
+      <div class="modal">
+        <div class="modal-content">
+          <h2>Modal Window</h2>
+          <p>
+            You have opened the modal, they are great for confirming actions or
+            displaying critical information.
+          </p>
+        </div>
+      </div>
+      <script>
+        const toggleModal = () => document.body.classList.toggle("open");
+      </script>
+    <script src="modal.js"></script>
+</body>
+</html>
